@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test.dir/src/mySql4cpp.cc.o CMakeFiles/test.dir/src/pageLib.cc.o CMakeFiles/test.dir/src/parseRss.cc.o CMakeFiles/test.dir/src/test.cc.o CMakeFiles/test.dir/src/tinyxml2.cc.o -o /home/monster/project1/bin/test  -lmysqlclient 

@@ -12,7 +12,9 @@ int main() {
     // build.buildLib();
     Mysql mysql;
     mysql.connect("localhost", "root", "123", "webData", 0, nullptr, 0);
-    Result res = mysql.read("SELECT * FROM webPage LIMIT 0,5000").first;
+    Result res = mysql.read("SELECT * FROM webPage", 5000).first;
+    cout << res.size() << endl;
+    
     return 0;
 }
 

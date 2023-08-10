@@ -38,17 +38,18 @@ bool Mysql::write(const string& mysqlQuery) {
     }
 }
 
-pair<Result, bool> Mysql::read(const string& mysqlQuery) {
+pair<Result, bool> Mysql::read(const string& mysqlQuery, int lines = 1000) {
     lock_guard<mutex> guard(_mutex);
     Result result;  // 用于存储返回结果
     int query = mysql_query(_mysql, mysqlQuery.c_str());
     if (query != 0) {
         return {result, false};
     }
-    MYSQL_RES* res = mysql_store_result(_mysql);
+    MYSQL_RES* res = mysql_use_result(_mysql);
 
     MYSQL_ROW row;
-    while ((row = mysql_fetch_row(res))) {
+    int count = 0;
+    while ((row = mysql_fetch_row(res)) && count++ < lines) {
         vector<string> tmp; // 用于存储一行的结果
         for (unsigned int i = 0; i < mysql_num_fields(res); ++i) {
             tmp.emplace_back(row[i]);

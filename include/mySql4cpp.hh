@@ -27,12 +27,9 @@ class Mysql {
 
     bool write(const string& mysqlQuery);  // 仅用于写语句。写入失败会设置错误码
 
-    pair<Result, bool> read(
-        const string& mysqlQuery);  // 仅用于查询语句，失败时设置错误码
+    pair<Result, bool> read(const string& mysqlQuery, int lines);  // 仅用于查询语句，失败时设置错误码
 
-    int query(
-        const string&
-            mysqlQuery);  // 可任意的mysql请求，返回值非0则是请求失败，设置错误码
+    int query(const string& mysqlQuery);  // 可任意的mysql请求，返回值非0则是请求失败，设置错误码
 
     string getError();  // 当有错误码产生时，获取错误信息
 

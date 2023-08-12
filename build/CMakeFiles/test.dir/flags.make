@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/monster/project1/include
+CXX_INCLUDES = -I/home/monster/outLine/include
 
 CXX_FLAGS = -std=c++11 -Wall -g
 

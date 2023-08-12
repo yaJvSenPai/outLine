@@ -8,7 +8,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/monster/project1/bin/test",
+            "program": "${workspaceFolder}/bin/test",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -28,6 +28,5 @@
                 }
             ]
         }
-
     ]
 }

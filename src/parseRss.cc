@@ -1,13 +1,12 @@
 #include "parseRss.hh"
 
-
 void RssReader::star(string path) {
     _path = path;
     parseRss();
     clearString();
 }
 
-vector<RssItem> RssReader::getData()  {
+vector<RssItem> RssReader::getData() {
     vector<RssItem> tmp;
     tmp.swap(_rss);
     return tmp;
@@ -31,7 +30,7 @@ void RssReader::parseRss() {
             XMLElement *link = item->FirstChildElement("link");
             XMLElement *description = item->FirstChildElement("description");
             XMLElement *content = item->FirstChildElement("content:encoded");
-            if(content == nullptr) {
+            if (content == nullptr) {
                 content = item->FirstChildElement("content");
             }
             RssItem tmp;

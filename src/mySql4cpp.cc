@@ -55,6 +55,7 @@ pair<Result, bool> Mysql::read(const string& mysqlQuery) {
         }
         result.emplace_back(tmp);
     }
+    mysql_free_result(res);
 
     return {result, true};
 }

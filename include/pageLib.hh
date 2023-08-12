@@ -13,16 +13,15 @@ using namespace Mysql4cpp;
 
 class PageLib {
    public:
+   PageLib(Mysql *mysql) : _mysql(mysql) {}
     void setDir(string path);
-    void connectMysql(const string& host, const string& user,
-                      const string& passwd, const string& db, unsigned int port,
-                      const char* unix_socket, unsigned int client_flag);
+    // void connectMysql(Mysql *mysql);
     void buildLib();
 
    private:
     DirScanner _dir;
     RssReader _rss;
-    Mysql _mysql;
+    Mysql* _mysql;
     vector<string> _filename;
 };
 

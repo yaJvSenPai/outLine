@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "memory_resource": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "sstream": "cpp",
+        "functional": "cpp",
+        "cpphead": "cpp",
+        "iosfwd": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "system_error": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
+}

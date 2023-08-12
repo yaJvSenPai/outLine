@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/monster/project1
+CMAKE_SOURCE_DIR = /home/monster/outLine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/monster/project1/build
+CMAKE_BINARY_DIR = /home/monster/outLine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -70,79 +70,94 @@ include CMakeFiles/test.dir/progress.make
 include CMakeFiles/test.dir/flags.make
 
 CMakeFiles/test.dir/src/mySql4cpp.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/mySql4cpp.cc.o: /home/monster/project1/src/mySql4cpp.cc
+CMakeFiles/test.dir/src/mySql4cpp.cc.o: /home/monster/outLine/src/mySql4cpp.cc
 CMakeFiles/test.dir/src/mySql4cpp.cc.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/mySql4cpp.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/mySql4cpp.cc.o -MF CMakeFiles/test.dir/src/mySql4cpp.cc.o.d -o CMakeFiles/test.dir/src/mySql4cpp.cc.o -c /home/monster/project1/src/mySql4cpp.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/mySql4cpp.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/mySql4cpp.cc.o -MF CMakeFiles/test.dir/src/mySql4cpp.cc.o.d -o CMakeFiles/test.dir/src/mySql4cpp.cc.o -c /home/monster/outLine/src/mySql4cpp.cc
 
 CMakeFiles/test.dir/src/mySql4cpp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/mySql4cpp.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/project1/src/mySql4cpp.cc > CMakeFiles/test.dir/src/mySql4cpp.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/mySql4cpp.cc > CMakeFiles/test.dir/src/mySql4cpp.cc.i
 
 CMakeFiles/test.dir/src/mySql4cpp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/mySql4cpp.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/project1/src/mySql4cpp.cc -o CMakeFiles/test.dir/src/mySql4cpp.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/mySql4cpp.cc -o CMakeFiles/test.dir/src/mySql4cpp.cc.s
 
 CMakeFiles/test.dir/src/pageLib.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/pageLib.cc.o: /home/monster/project1/src/pageLib.cc
+CMakeFiles/test.dir/src/pageLib.cc.o: /home/monster/outLine/src/pageLib.cc
 CMakeFiles/test.dir/src/pageLib.cc.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/pageLib.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/pageLib.cc.o -MF CMakeFiles/test.dir/src/pageLib.cc.o.d -o CMakeFiles/test.dir/src/pageLib.cc.o -c /home/monster/project1/src/pageLib.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/pageLib.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/pageLib.cc.o -MF CMakeFiles/test.dir/src/pageLib.cc.o.d -o CMakeFiles/test.dir/src/pageLib.cc.o -c /home/monster/outLine/src/pageLib.cc
 
 CMakeFiles/test.dir/src/pageLib.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pageLib.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/project1/src/pageLib.cc > CMakeFiles/test.dir/src/pageLib.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/pageLib.cc > CMakeFiles/test.dir/src/pageLib.cc.i
 
 CMakeFiles/test.dir/src/pageLib.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pageLib.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/project1/src/pageLib.cc -o CMakeFiles/test.dir/src/pageLib.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/pageLib.cc -o CMakeFiles/test.dir/src/pageLib.cc.s
+
+CMakeFiles/test.dir/src/pageLibPre.cc.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/pageLibPre.cc.o: /home/monster/outLine/src/pageLibPre.cc
+CMakeFiles/test.dir/src/pageLibPre.cc.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/pageLibPre.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/pageLibPre.cc.o -MF CMakeFiles/test.dir/src/pageLibPre.cc.o.d -o CMakeFiles/test.dir/src/pageLibPre.cc.o -c /home/monster/outLine/src/pageLibPre.cc
+
+CMakeFiles/test.dir/src/pageLibPre.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pageLibPre.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/pageLibPre.cc > CMakeFiles/test.dir/src/pageLibPre.cc.i
+
+CMakeFiles/test.dir/src/pageLibPre.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pageLibPre.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/pageLibPre.cc -o CMakeFiles/test.dir/src/pageLibPre.cc.s
 
 CMakeFiles/test.dir/src/parseRss.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/parseRss.cc.o: /home/monster/project1/src/parseRss.cc
+CMakeFiles/test.dir/src/parseRss.cc.o: /home/monster/outLine/src/parseRss.cc
 CMakeFiles/test.dir/src/parseRss.cc.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/parseRss.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/parseRss.cc.o -MF CMakeFiles/test.dir/src/parseRss.cc.o.d -o CMakeFiles/test.dir/src/parseRss.cc.o -c /home/monster/project1/src/parseRss.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/parseRss.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/parseRss.cc.o -MF CMakeFiles/test.dir/src/parseRss.cc.o.d -o CMakeFiles/test.dir/src/parseRss.cc.o -c /home/monster/outLine/src/parseRss.cc
 
 CMakeFiles/test.dir/src/parseRss.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/parseRss.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/project1/src/parseRss.cc > CMakeFiles/test.dir/src/parseRss.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/parseRss.cc > CMakeFiles/test.dir/src/parseRss.cc.i
 
 CMakeFiles/test.dir/src/parseRss.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/parseRss.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/project1/src/parseRss.cc -o CMakeFiles/test.dir/src/parseRss.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/parseRss.cc -o CMakeFiles/test.dir/src/parseRss.cc.s
 
 CMakeFiles/test.dir/src/test.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/test.cc.o: /home/monster/project1/src/test.cc
+CMakeFiles/test.dir/src/test.cc.o: /home/monster/outLine/src/test.cc
 CMakeFiles/test.dir/src/test.cc.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/test.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cc.o -MF CMakeFiles/test.dir/src/test.cc.o.d -o CMakeFiles/test.dir/src/test.cc.o -c /home/monster/project1/src/test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/test.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cc.o -MF CMakeFiles/test.dir/src/test.cc.o.d -o CMakeFiles/test.dir/src/test.cc.o -c /home/monster/outLine/src/test.cc
 
 CMakeFiles/test.dir/src/test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/project1/src/test.cc > CMakeFiles/test.dir/src/test.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/test.cc > CMakeFiles/test.dir/src/test.cc.i
 
 CMakeFiles/test.dir/src/test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/project1/src/test.cc -o CMakeFiles/test.dir/src/test.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/test.cc -o CMakeFiles/test.dir/src/test.cc.s
 
 CMakeFiles/test.dir/src/tinyxml2.cc.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/tinyxml2.cc.o: /home/monster/project1/src/tinyxml2.cc
+CMakeFiles/test.dir/src/tinyxml2.cc.o: /home/monster/outLine/src/tinyxml2.cc
 CMakeFiles/test.dir/src/tinyxml2.cc.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/tinyxml2.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/tinyxml2.cc.o -MF CMakeFiles/test.dir/src/tinyxml2.cc.o.d -o CMakeFiles/test.dir/src/tinyxml2.cc.o -c /home/monster/project1/src/tinyxml2.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/tinyxml2.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/tinyxml2.cc.o -MF CMakeFiles/test.dir/src/tinyxml2.cc.o.d -o CMakeFiles/test.dir/src/tinyxml2.cc.o -c /home/monster/outLine/src/tinyxml2.cc
 
 CMakeFiles/test.dir/src/tinyxml2.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/tinyxml2.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/project1/src/tinyxml2.cc > CMakeFiles/test.dir/src/tinyxml2.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monster/outLine/src/tinyxml2.cc > CMakeFiles/test.dir/src/tinyxml2.cc.i
 
 CMakeFiles/test.dir/src/tinyxml2.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/tinyxml2.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/project1/src/tinyxml2.cc -o CMakeFiles/test.dir/src/tinyxml2.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monster/outLine/src/tinyxml2.cc -o CMakeFiles/test.dir/src/tinyxml2.cc.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/mySql4cpp.cc.o" \
 "CMakeFiles/test.dir/src/pageLib.cc.o" \
+"CMakeFiles/test.dir/src/pageLibPre.cc.o" \
 "CMakeFiles/test.dir/src/parseRss.cc.o" \
 "CMakeFiles/test.dir/src/test.cc.o" \
 "CMakeFiles/test.dir/src/tinyxml2.cc.o"
@@ -150,19 +165,20 @@ test_OBJECTS = \
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-/home/monster/project1/bin/test: CMakeFiles/test.dir/src/mySql4cpp.cc.o
-/home/monster/project1/bin/test: CMakeFiles/test.dir/src/pageLib.cc.o
-/home/monster/project1/bin/test: CMakeFiles/test.dir/src/parseRss.cc.o
-/home/monster/project1/bin/test: CMakeFiles/test.dir/src/test.cc.o
-/home/monster/project1/bin/test: CMakeFiles/test.dir/src/tinyxml2.cc.o
-/home/monster/project1/bin/test: CMakeFiles/test.dir/build.make
-/home/monster/project1/bin/test: /usr/lib/x86_64-linux-gnu/libmysqlclient.so
-/home/monster/project1/bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/monster/project1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /home/monster/project1/bin/test"
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/mySql4cpp.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/pageLib.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/pageLibPre.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/parseRss.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/test.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/src/tinyxml2.cc.o
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/build.make
+/home/monster/outLine/bin/test: /usr/lib/x86_64-linux-gnu/libmysqlclient.so
+/home/monster/outLine/bin/test: CMakeFiles/test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/monster/outLine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/monster/outLine/bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test.dir/build: /home/monster/project1/bin/test
+CMakeFiles/test.dir/build: /home/monster/outLine/bin/test
 .PHONY : CMakeFiles/test.dir/build
 
 CMakeFiles/test.dir/clean:
@@ -170,6 +186,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /home/monster/project1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/monster/project1 /home/monster/project1 /home/monster/project1/build /home/monster/project1/build /home/monster/project1/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/monster/outLine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/monster/outLine /home/monster/outLine /home/monster/outLine/build /home/monster/outLine/build /home/monster/outLine/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

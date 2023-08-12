@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/monster/project1
+CMAKE_SOURCE_DIR = /home/monster/outLine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/monster/project1/build
+CMAKE_BINARY_DIR = /home/monster/outLine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/monster/project1/build/CMakeFiles /home/monster/project1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/monster/outLine/build/CMakeFiles /home/monster/outLine/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/monster/project1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/monster/outLine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ src/pageLib.s: src/pageLib.cc.s
 src/pageLib.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pageLib.cc.s
 .PHONY : src/pageLib.cc.s
+
+src/pageLibPre.o: src/pageLibPre.cc.o
+.PHONY : src/pageLibPre.o
+
+# target to build an object file
+src/pageLibPre.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pageLibPre.cc.o
+.PHONY : src/pageLibPre.cc.o
+
+src/pageLibPre.i: src/pageLibPre.cc.i
+.PHONY : src/pageLibPre.i
+
+# target to preprocess a source file
+src/pageLibPre.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pageLibPre.cc.i
+.PHONY : src/pageLibPre.cc.i
+
+src/pageLibPre.s: src/pageLibPre.cc.s
+.PHONY : src/pageLibPre.s
+
+# target to generate assembly for a file
+src/pageLibPre.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pageLibPre.cc.s
+.PHONY : src/pageLibPre.cc.s
 
 src/parseRss.o: src/parseRss.cc.o
 .PHONY : src/parseRss.o
@@ -264,6 +288,9 @@ help:
 	@echo "... src/pageLib.o"
 	@echo "... src/pageLib.i"
 	@echo "... src/pageLib.s"
+	@echo "... src/pageLibPre.o"
+	@echo "... src/pageLibPre.i"
+	@echo "... src/pageLibPre.s"
 	@echo "... src/parseRss.o"
 	@echo "... src/parseRss.i"
 	@echo "... src/parseRss.s"

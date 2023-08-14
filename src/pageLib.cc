@@ -1,6 +1,7 @@
 #include "pageLib.hh"
 
 void PageLib::setDir(string path) {
+    _path = path;
     _dir.traverse(path);
     _filename = _dir.getName();
 }
@@ -15,7 +16,7 @@ void PageLib::buildLib() {
 
     vector<RssItem> data;
     for (const auto& file : _filename) {
-        _rss.star("../data/corpus/" + file);
+        _rss.star(_path + "/" + file);
         data = _rss.getData();
 
         for (const auto& rs : data) {

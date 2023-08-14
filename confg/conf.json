@@ -1,0 +1,9 @@
+{
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "passwd": "123",
+        "database": "webData"
+    },
+    "dataPath": "../data/corpus"
+}

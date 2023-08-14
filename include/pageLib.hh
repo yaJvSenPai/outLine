@@ -23,6 +23,7 @@ class PageLib {
     RssReader _rss;
     Mysql* _mysql;
     vector<string> _filename;
+    string _path;
 };
 
 #endif

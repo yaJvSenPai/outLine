@@ -1,3 +1,0 @@
-/home/monster/outLine/build/CMakeFiles/test.dir
-/home/monster/outLine/build/CMakeFiles/edit_cache.dir
-/home/monster/outLine/build/CMakeFiles/rebuild_cache.dir

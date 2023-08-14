@@ -24,15 +24,15 @@ void PageLibPre::rmDuplicate() {
         simhasher.make(s1, topN1, u1);
         us.push_back(u1);
     }
-    cout << "hash done" << endl;
+    // cout << "hash done" << endl;
 
     for (int i = 0; i < maxSize - 1; ++i) {
         for (int j = i + 1; j < maxSize; ++j) {
             if (Simhasher::isEqual(us[i], us[j])) {
                 if (res[i][2] == res[j][2]) {
                     willDec.insert(res[j][0]);
-                    cout << res[i][0] << " : " << res[j][0]
-                         << endl;  // 调试，输出重发文章的id
+                    // cout << res[i][0] << " : " << res[j][0]
+                    //      << endl;  // 调试，输出重发文章的id
                 }
             }
         }
@@ -52,11 +52,11 @@ void PageLibPre::rmDuplicate() {
 
 void PageLibPre::mkInverted() {
     preInverted();
-    cout << "preInverted() done" << endl;
+    // cout << "preInverted() done" << endl;
     setWeight();
-    cout << "setWeight() done" << endl;
+    // cout << "setWeight() done" << endl;
     normalization();
-    cout << "normalization() done" << endl;
+    // cout << "normalization() done" << endl;
 }
 
 void PageLibPre::preInverted() {
